@@ -84,11 +84,11 @@ jobs:
           echo "DEVICE_TARGET=recoveryimage" >> $GITHUB_ENV
           echo "DEVICE_BUILD=recovery.img" >> $GITHUB_ENV
         fi
-        if [ "${{ inputs.DEVICE_NAME }}" == "X6710" ]; then
-          echo "DEVICE_TREE=https://github.com/cdpcrp/custom_recovery_tree_infinix_X6710" >> $GITHUB_ENV
+        if [ "${{ inputs.DEVICE_NAME }}" == "adt3" ]; then
+          echo "DEVICE_TREE=https://github.com/XvSvM/H728PROPLUS.git" >> $GITHUB_ENV
           echo "DEVICE_BRANCH=twrp-14" >> $GITHUB_ENV
-          echo "DEVICE_LUNCH=twrp_X6710-eng" >> $GITHUB_ENV
-          echo "DEVICE_PATH=device/infinix/X6710" >> $GITHUB_ENV
+          echo "DEVICE_LUNCH=twrp_adt3-eng" >> $GITHUB_ENV
+          echo "DEVICE_PATH=device/askey/adt3" >> $GITHUB_ENV
           echo "DEVICE_TARGET=vendorbootimage" >> $GITHUB_ENV
           echo "DEVICE_BUILD=vendor_boot.img" >> $GITHUB_ENV
         fi
